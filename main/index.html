@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hack Club CV - Crescenta Valley High School</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+        }
+
+        header {
+            background: linear-gradient(135deg, #d4a574 0%, #c19a6b 100%);
+            color: white;
+            padding: 1rem 0;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+
+        nav {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 2rem;
+        }
+
+        .logo {
+            font-size: 1.5rem;
+            font-weight: bold;
+        }
+
+        nav ul {
+            display: flex;
+            list-style: none;
+            gap: 2rem;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            transition: opacity 0.3s;
+        }
+
+        nav a:hover {
+            opacity: 0.8;
+        }
+
+        .hero {
+            background: linear-gradient(135deg, #d4a574 0%, #c19a6b 100%);
+            color: white;
+            padding: 150px 2rem 100px;
+            text-align: center;
+        }
+
+        .hero h1 {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+            animation: fadeInUp 1s;
+        }
+
+        .hero p {
+            font-size: 1.3rem;
+            margin-bottom: 2rem;
+            animation: fadeInUp 1s 0.2s backwards;
+        }
+
+        .cta-button {
+            display: inline-block;
+            background: white;
+            color: #c19a6b;
+            padding: 1rem 2rem;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: transform 0.3s, box-shadow 0.3s;
+            animation: fadeInUp 1s 0.4s backwards;
+        }
+
+        .cta-button:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+        }
+
+        section {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 4rem 2rem;
+        }
+
+        h2 {
+            font-size: 2.5rem;
+            margin-bottom: 2rem;
+            text-align: center;
+            color: #c19a6b;
+        }
+
+        .features {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin-top: 3rem;
+        }
+
+        .feature-card {
+            background: white;
+            padding: 2rem;
+            border-radius: 15px;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .feature-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 35px rgba(0,0,0,0.15);
+        }
+
+        .feature-card h3 {
+            color: #c19a6b;
+            margin-bottom: 1rem;
+            font-size: 1.5rem;
+        }
+
+        .events {
+            background: #f5f1eb;
+        }
+
+        .event-list {
+            display: flex;
+            flex-direction: column;
+            gap: 1.5rem;
+            margin-top: 2rem;
+        }
+
+        .event-item {
+            background: white;
+            padding: 1.5rem;
+            border-radius: 10px;
+            border-left: 5px solid #c19a6b;
+            box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+        }
+
+        .event-date {
+            color: #d4a574;
+            font-weight: bold;
+            margin-bottom: 0.5rem;
+        }
+
+        footer {
+            background: #2d3748;
+            color: white;
+            text-align: center;
+            padding: 2rem;
+            margin-top: 4rem;
+        }
+
+        .social-links {
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+            margin-top: 1rem;
+        }
+
+        .social-links a {
+            color: white;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+
+        .social-links a:hover {
+            color: #d4a574;
+        }
+
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @media (max-width: 768px) {
+            .hero h1 {
+                font-size: 2rem;
+            }
+            
+            nav ul {
+                gap: 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">🚀 Hack Club CV</div>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#events">Events</a></li>
+                <li><a href="#join">Join</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="hero" id="home">
+        <h1>Welcome to Hack Club CV</h1>
+        <p>Crescenta Valley High School's community of coders, builders, and makers</p>
+        <a href="#join" class="cta-button">Join Our Club</a>
+    </section>
+
+    <section id="about">
+        <h2>What We Do</h2>
+        <div class="features">
+            <div class="feature-card">
+                <h3>💻 Code Together</h3>
+                <p>Learn programming languages, frameworks, and tools through hands-on workshops and collaborative coding sessions.</p>
+            </div>
+            <div class="feature-card">
+                <h3>🛠️ Build Projects</h3>
+                <p>Transform your ideas into reality by creating websites, apps, games, and innovative tech solutions.</p>
+            </div>
+            <div class="feature-card">
+                <h3>🤝 Connect & Grow</h3>
+                <p>Join a community of passionate makers, participate in hackathons, and develop your skills together.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="events" id="events">
+        <h2>Upcoming Events</h2>
+        <div class="event-list">
+            <div class="event-item">
+                <div class="event-date">📅 Every Tuesday, 3:30 PM</div>
+                <h3>Weekly Coding Sessions</h3>
+                <p>Join us for regular meetups where we work on projects, share knowledge, and help each other grow.</p>
+            </div>
+            <div class="event-item">
+                <div class="event-date">📅 Next Month</div>
+                <h3>Mini Hackathon</h3>
+                <p>Build something awesome in 24 hours! Team up with friends and compete for prizes.</p>
+            </div>
+            <div class="event-item">
+                <div class="event-date">📅 Coming Soon</div>
+                <h3>Guest Speaker Series</h3>
+                <p>Learn from industry professionals about careers in tech, latest trends, and insider tips.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="join">
+        <h2>Ready to Join?</h2>
+        <p style="text-align: center; font-size: 1.2rem; margin-bottom: 2rem;">
+            Whether you're a complete beginner or an experienced coder, there's a place for you in Hack Club CV.
+        </p>
+        <div style="text-align: center;">
+            <a href="mailto:hackclubcv@crescentavalley.edu" class="cta-button">Get In Touch</a>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy;  Hack Club CV - Crescenta Valley High School. Built with love by students, for students.</p>
+        <div class="social-links">
+            <a href="#">GitHub</a>
+            <a href="#">Discord</a>
+            <a href="#">Instagram</a>
+        </div>
+    </footer>
+</body>
+</html>
